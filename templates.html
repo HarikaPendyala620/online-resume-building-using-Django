@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Resume</title>
+</head>
+<body>
+    <h1>Generate Resume</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate Resume</button>
+    </form>
+</body>
+</html>
